@@ -1,0 +1,79 @@
+body{
+   font-family: 'Lato', sans-serif;
+}
+#sec-1{
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 105px;
+    width: 53%;
+    padding: 35px;
+}
+.description{
+    margin: 0 auto;
+    text-align: center;
+}
+#image img{
+    width: 150px;
+    height: 150px;
+}
+
+
+#image{
+    overflow: hidden;
+    z-index: 1;
+    transform: translateY(20%);
+    width: 150px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+   
+}
+ul{
+
+    padding: 0; 
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
+}
+ul li{
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 48px;
+    float: left;
+    margin: 20px;
+    background-image: url(card_icons.png);
+    background-repeat: no-repeat;
+    background-size: 378px;
+    /* background-position-y: -48px; */
+    transition: all .25s ease-out;
+    text-align: -webkit-match-parent;
+    transition: all 0.7s;
+}
+
+ul li[data-label=name]{
+    background-position: 0 1px;
+}
+
+ul li[data-label=email] {
+    background-position: -68px -48px;
+}
+
+ul li[data-label=birthday] {
+    background-position: -135px -48px;
+}
+
+ul li[data-label=location] {
+    background-position: -203px -48px;
+}
+ul li[data-label=phone] {
+    background-position: -270px -48px;
+}
+
